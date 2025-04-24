@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assest/img/logo.png" type="image/vnd.icon">
     <title>Olivia Ros</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">OLIVIA ROS</a>
+          <a class="navbar-brand px-5" href="#"> 
+            <img src="./assest/img/logo.png" alt="OLIVIA ROS" width="132" height="53">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav text-end">
+          <div class="collapse navbar-collapse end-0" id="navbarNav end-0">
+            <ul class="navbar-nav end-0">
               <li class="nav-item">
                 <a class="nav-link" href="#">Acerca de mi</a>
               </li>
@@ -30,35 +33,110 @@
           </div>
         </div>
     </nav>
-    <header>
+    <header  id="header">
+      <!-- <div class="container col-md-6 flex-fill"></div> -->
+      <div class="text-light text-end p-4 container col-12 col-md-8 offset-md-4">
         <div>
-            <h1>Comidas del fin del mundo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non blanditiis error nihil, optio eos a voluptates possimus soluta distinctio dolore rerum eius sed, consequuntur quidem at ea asperiores delectus.</p>
+          <h1 class=" titulo"><strong>Comidas del fin del mundo</strong></h1>
+          <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, sapiente natus porro sint tempora sit assumenda earum at sed, maiores eligendi amet nulla necessitatibus beatae fuga alias suscipit facilis odio.</p>
         </div>
         <div>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-
+          <button id="letras" type="button" class="btn btn-outline-success">Trabajos</button>
+          <button id="fondo" type="button" class="btn btn-primary">Contacto</button>
+  
         </div>
+      </div>
+     
         
     </header>
 
-    <section>
-        acerca de mi fondo blanco con:
-        titulo
-        descripcion
-        iconos con nombre y una descripcion
+    <section class="text-center p-5">
+        <h1><strong>Acerca de mí</strong></h1>
+        <p class="mx-5 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dicta aliquid libero exercitationem, nihil voluptas vero itaque adipisci sequi facilis nam praesentium molestiae eos esse, id et a sit laborum!</p>
+        <div class="container ">
+          <div class="row">
+            <div class="p-4 flex-fill col-12 col-md-6 col-xl-4">
+              svg
+              <p><strong>Fotógrafa de comida</strong></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rem excepturi voluptates maxime qui veniam aperiam corporis consectetur explicabo quam commodi nulla ex natus, blanditiis illum cum sint, dolore similique!</p>
+            </div>
+            <div class="p-4 flex-fill col-12 col-md-6 col-xl-4">
+              svg
+              <p><strong>Crítica culinaria</strong></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rem excepturi voluptates maxime qui veniam aperiam corporis consectetur explicabo quam commodi nulla ex natus, blanditiis illum cum sint, dolore similique!</p>
+            </div>
+            <div class="p-4 flex-fill col-12 col-md-6 col-xl-4">
+              svg
+              <p><strong>Bloggera de viajes</strong></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rem excepturi voluptates maxime qui veniam aperiam corporis consectetur explicabo quam commodi nulla ex natus, blanditiis illum cum sint, dolore similique!</p> 
+            </div>
+          </div>       
+        </div>
+    </section>
+
+    <section class="container-fluid p-4" id="trabajos">
+        <h1 class="p-4 text-center"><strong>Mis trabajos</strong></h1>
+       
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="col">
+            <div class="card">
+              <img src="./assets/img/card-1.jpg" class="card-img-top" width="30%">
+              <div class="card-body">
+                <h4 class="card-title"><strong>Asado en la Patagonia</strong></h4>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-outline-info">Ver más</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./assets/img/card-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title"><strong>Papas del fin del mundo</strong></h4>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-outline-info">Ver más</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./assets/img/card-3.jpg" class="card-img-top">
+              <div class="card-body">
+                <h4 class="card-title"><strong>Salmones de Alaska</strong></h4>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <button type="button" class="btn btn-outline-info">Ver más</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <section>
-        mis trabajos
-        3 card con imagen descripcion y boton
-    </section>
-
-    <section>
-        contactame
-
+        <h1><strong>Contactame</strong></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni velit ad maxime dicta libero necessitatibus quod, numquam provident suscipit at eligendi voluptas consequatur culpa assumenda dolores vitae, sed cumque? Delectus?</p>
+        <form class="row g-3">
+          <div class="col-md-10 col-12 mx-auto">
+            <label for="inputEmail4" class="form-label">Nombre</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
+          </div>
+          <div class="col-md-10 col-12 mx-auto">
+            <label for="inputAddress" class="form-label">Correo electrónico</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Correo electrónico">
+          </div>
+          <div class="col-md-10 col-12 mx-auto">
+            <label for="inputAddress2" class="form-label">Mensaje</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Escriba su mensaje aquí">
+          </div>
+         
+          
+          
+          <div class="col-2">
+            <button type="submit" class="btn btn-primary sticky-bottom">Sign in</button>
+          </div>
+        </form>
     </section>
 
     <footer>
